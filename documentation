@@ -1,0 +1,13 @@
+cd directory
+npx create-react-app hello-world
+npm start //server
+
+for build
+npm run build
+
+//production preview
+npm install -g serve
+serve -s build
+
+//added one more module
+npm install react-router-dom
