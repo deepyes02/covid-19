@@ -11,8 +11,6 @@ const Chart = () => {
         }
 
         fetchAPI();
-
-
     });
 
 
