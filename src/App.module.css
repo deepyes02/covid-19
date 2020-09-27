@@ -1,25 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
 body {
-    background-color: rgb(250,250,250); 
+    background-color: rgb(231, 238, 224); 
     font-family: 'Roboto', sans-serif;
 }
 
 .container{
     display: flex;
     align-items: center;
+    text-align: left;
     flex-direction: column;
 }
 
 .image{
   width: 370px;
   margin-top: 50px;
-}
-
-.logo{
-  border-radius: 25px;
-  margin-top: 2%;
-    width: 50%;
-    align-self: flex-start;
 }
 
 .button{
@@ -44,9 +38,4 @@ body {
     width: 100%;
   }
 
-  .logo{
-    margin-top: 2%;
-    width: 50%;
-    align-self: flex-start;
-  }
 }
