@@ -1,7 +1,7 @@
 {
-    "name": "helloworld",
+    "name": "covid19livestat",
     "version": "0.1.0",
-    "private": true,
+    "private": false,
     "homepage": "https://deepyes02.github.io/covid-19/",
     "dependencies": {
         "@testing-library/jest-dom": "^4.2.4",
