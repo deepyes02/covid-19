@@ -4,19 +4,32 @@
 
 .card {
     margin: 0 2% !important;
+    border-radius: 12px !important;
     box-shadow: 1px 1px 1px rgba(66, 61, 61, 0.644) !important;
 }
 
 .infected{
-    border-bottom: 10px solid rgba(0,0,255, 0.5);
+    border-bottom: 10px solid rgba(63, 63, 128, 0.5);
 }
 
 .recovered{
-    border-bottom: 10px solid rgba(0,255,0, 0.5);
+    border-bottom: 10px solid rgba(78, 164, 78, 0.5);
 }
 
 .deaths{
-    border-bottom: 10px solid rgba(255,0,0, 0.5);
+    border-bottom: 10px solid rgba(241, 20, 20, 0.5);
+}
+.date{
+    display:block;
+    width: 40px;
+    min-width: 40%;
+    border-radius: 10px !important;
+    margin: 5px auto 40px !important;
+    text-align: center;
+    background-color: rgb(222, 205, 205);
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 @media (max-width: 770px){

@@ -17,6 +17,9 @@ const Cards = ({data: {confirmed, deaths, recovered, lastUpdate}}) => {
     
     return(
         <div className={styles.container}>
+            <div className={styles.date}>
+            <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
+            </div>
             <Grid container spacing={3} justify="center">
                 <Grid item component={Card} xs ={12} md ={3} className={cx(styles.card, styles.infected)}>
                     <CardContent> 
@@ -24,8 +27,7 @@ const Cards = ({data: {confirmed, deaths, recovered, lastUpdate}}) => {
                         <Typography variant="h5">
                             <CountUp start = {0} end = {confirmed.value} duration = {1} separator = ","/>
                         </Typography>
-                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number of active covid-19 Cases</Typography>
+    <Typography variant="body2">Percentage of World Population(%): {(confirmed.value/7800000000).toFixed(5)}</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs ={12} md ={3} className={cx(styles.card, styles.recovered)}>
@@ -35,9 +37,7 @@ const Cards = ({data: {confirmed, deaths, recovered, lastUpdate}}) => {
                         <Typography variant="h5">
                         <CountUp start = {0} end = {recovered.value} duration = {1} separator = ","/>
                             </Typography>
-                            <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-
-                        <Typography variant="body2">Number of recoveries</Typography>
+                        <Typography variant="body2">Percentage of World Population(%): {(recovered.value/7800000000).toFixed(5)}</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs ={12} md ={3} className={cx(styles.card, styles.deaths)}>
@@ -46,9 +46,7 @@ const Cards = ({data: {confirmed, deaths, recovered, lastUpdate}}) => {
                         <Typography variant="h5">
                         <CountUp start = {0} end = {deaths.value} duration = {1} separator = ","/>
                         </Typography>
-                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-
-                        <Typography variant="body2">Number of total deaths by Covid-19</Typography>
+                        <Typography  variant="body2">Percentage of World Population(%): {(deaths.value/780000000).toFixed(5)}  </Typography>
                     </CardContent>
                 </Grid>
 

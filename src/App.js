@@ -4,7 +4,7 @@ import { Cards, Chart, CountryPicker } from './components';
 import styles from './App.module.css';
 
 import { fetchData } from './api';
-import coronaimage from './images/image.png';
+import virus_image from './images/virus_image.jpg';
 
 class App extends React.Component {
     state = {
@@ -36,17 +36,23 @@ class App extends React.Component {
         const { data, country } = this.state;
         return (
             <div className={styles.container}>
-                <img className={styles.image} src={coronaimage} alt="COVID-19" />
+                <div className={styles.cover}>
+                    <h2>COVID 19</h2>
+                <img className={styles.image} src={virus_image} alt="COVID-19" />
+                </div>
                 <Cards data={data} />
                 <CountryPicker handleCountryChange={this.handleCountryChange} />
                 <Chart data={data} country={country} />
-                <h3 className={styles.websiteTitle}>About Developer</h3>
-                <span> Hello I am Deepesh and I'm intensively learning and putting to use my knowledge of programming in Javascript into building web and native applications.</span>
-                <ul>Technology used
+                <div className={styles.websiteTitle}>
+                <h4>About Developer</h4>
+                <span> Hello I am Deepesh and I'm intensively learning and putting to use my knowledge of programming in Javascript into building web and native applications. This app is showing data from an api and will be correct to the extent of the accuracy of the data available.</span>
+                <h4>Made with ❤ Using </h4>
+                <ul>
                     <li>React JS</li>
                     <li>Chart JS</li>
                     <li><a href="https://covid19.mathdro.id/api" target="_blank" rel="noopener noreferrer">Api</a></li>
                 </ul>
+                </div>
                 <a className={styles.button} href="https://www.github.com/deepyes02">Visit My Github</a>
             </div>
         )
