@@ -74,8 +74,7 @@
     "scripts": {
         "start": "node scripts/start.js",
         "predeploy": "node scripts/build.js",
-        "deploy": "gh-pages -d build",
-        "test": "node scripts/test.js"
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": "react-app"
