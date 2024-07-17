@@ -1,3 +1,4 @@
+## UPDATE 2024 - July 17 - The api is dead so this program is no longer maintained and functioning. :-( 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 COVID 19 Tracker app. you can visit the live version https://deepyes02.github.io/covid-19/
